@@ -1,0 +1,24 @@
+.btn {
+  &.btn-claro {
+    background-color:@carne;
+    color:@fresa!important;
+    &:hover {
+      background-color:@fresaoscuro;
+      color:@carne!important;
+    }
+  }
+  &.btn-alpha {
+    background-color:transparent!important;
+    color:@carne!important;
+    &:hover {
+      color:lighten(@fresa,20%)!important;
+      background-color:transparent!important;
+    }
+  }
+  
+  &.btn-large {
+    font-size:22px;
+    padding:17px 25px;
+  }
+  .transition-two(background-color,color,.1s);
+}

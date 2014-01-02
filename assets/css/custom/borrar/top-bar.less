@@ -1,0 +1,38 @@
+.navbar-toggle .icon-bar {
+  background-color:@carne;
+}
+
+li a.btn {
+  font-size:16px!important;
+  text-transform:uppercase;
+  padding-top:25px!important;
+}
+
+.navbar-brand .icono {
+  margin-right: 14px;
+  margin-top: -11px;
+}
+
+.nav.navbar-nav.navbar-right {
+  float:right!important;
+  li.visible-xs {
+    @media(max-width:@screen-xs-max) {
+      display:inline-block!important;
+    }
+  }
+  li {
+    display:inline-block;
+    float:none!important;
+  }
+}
+
+@media(max-width:@screen-xs-max){
+  .navbar-nav {
+    margin: -72px -15px;
+  }
+  .navbar .container {
+    padding-left:10%;
+    padding-right:10%;
+  }
+}
+

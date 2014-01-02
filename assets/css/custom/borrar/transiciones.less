@@ -1,0 +1,27 @@
+.from-left{
+  .opacity(0);
+  margin-left:-100%;
+  .transition-two(opacity,margin-left,1s,ease);
+  &.play {
+    .opacity(1);
+    margin-left:0;
+  }
+}
+
+.from-right{
+  .opacity(0);
+  margin-left:100%;
+  .transition-two(opacity,margin-left,1.8s,ease);
+  &.play {
+    .opacity(1);
+    margin-left:0;
+  }
+}
+
+.from-alpha {
+  .opacity(0);
+  .transition(opacity,1.8s,ease);
+  &.play {
+    .opacity(1);
+  }
+}

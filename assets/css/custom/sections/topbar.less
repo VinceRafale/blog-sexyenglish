@@ -1,0 +1,66 @@
+#upper-menu-container, #upper-menu-mobile {
+  background-color:rgba(red(@fresa),green(@fresa),blue(@fresa),.8);
+  #page-menu-wrapper ul li .top-menu {
+    color:@carne;
+    font-family:@fuente;
+    height:100%;
+    padding-bottom: 17px;
+    &:hover {
+      background-color:@carne!important;
+      color:@fresa-oscuro!important;
+    }
+  }
+  .dropdown-menu {
+    background-color:transparent!important;
+    ul.social {
+      background-color:transparen!importantt;
+    }
+    li {
+      border:0;
+      a {
+        background-color:rgba(red(@fresa),green(@fresa),blue(@fresa),.8);
+        color:@carne;
+        border:0;
+        
+        &:hover {
+          color:@carne!important;
+        }
+        &.rss {
+          &:hover {
+            color:@fresa!important;
+            background-color:@amarillo!important;
+          }
+        }
+        &.facebook {
+          &:hover {
+            background-color:#016bb6!important;
+          }
+        }
+        &.twitter {
+          &:hover {
+            background-color:@azul!important;
+          }
+        }
+        &.googleplus {
+          &:hover {
+            background-color:@rojo!important;
+          }
+        }
+      }
+    }
+    &.categories {
+      li a {
+        &:hover {
+          background-color:@fresa-oscuro!important;
+        }
+      }
+    }
+  }
+}
+
+#upper-menu-mobile {
+  #page-menu-wrapper ul li .top-menu {
+    padding-top:15px!important;
+    padding-bottom:15px!important;
+  }
+}

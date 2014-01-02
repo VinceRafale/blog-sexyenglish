@@ -1,0 +1,44 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+ { 
+ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; 
+}
+
+body {
+  padding-top:50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,a:hover {
+  text-decoration: none;
+}
+
+
+
+.reveal {
+  cursor:pointer;
+  h6 {
+    display: inline-block;
+    padding-bottom: 6px;
+    top:8px;
+    position: relative;
+    &:hover {
+      border-bottom:1px dashed white;
+    }
+  }
+}
+
+.destacado {
+  border: 10px solid red;
+}
+
+.hidden-xs {
+  @media(max-width:@screen-xs-max) {
+    display:none!important;
+  }
+}
+
+
