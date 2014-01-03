@@ -1,0 +1,198 @@
+/**
+ * Content 13 stylesheet  
+ * */
+ 
+.content-13{
+
+    position: fixed;
+    bottom: -400px;
+    width: 100%;
+    z-index:1000;
+    .transition-two(bottom,opacity,.2s,ease);
+    &.subscribe-form {
+    background-color:@fresa;
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    color: #a1a9b1;
+    /* padding-left:50px; */
+    .span4 {
+      text-align:center!important;
+
+/*
+      text-align: right;
+      position: absolute;
+      right: 50px;
+      margin-top: -62px;
+*/
+
+      @media (max-width: 767px) { text-align: center; }
+    }
+    form {margin: 0; position: relative;}
+    input[type="text"] {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      line-height:60px;
+       font-size:50px;
+       color:white;
+       font-family: @fuente;
+       font-weight: 500;
+       letter-spacing: -1px;
+      /* .placeholder-color(white); */
+
+      &::-webkit-input-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &:-moz-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &::-moz-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      &:-ms-input-placeholder {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+    }
+    .ani-placeholder {
+
+      box-sizing: border-box;
+      position: absolute;
+      padding-left: 6px;
+      line-height:60px;
+      font-size:50px;
+      color:#a1a9b1;
+      font-family: @fuente;    
+    }  
+    .btn {
+      margin-top: 8px;
+      width: 220px;
+      max-width: 100%;
+      margin-left:10px;
+      margin-right:10px;
+      &.btn-primary {
+        background: @fresa;
+        &:hover, &:focus { background: #24deb4;} // should be changed to some color variable
+        &:active, &.active {background: #138871;}
+      }
+
+      background-color: @carne!important;
+      border-bottom-color: rgb(255, 255, 255);
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-bottom-style: none;
+      border-bottom-width: 0px;
+      /*
+      border-image-outset: 0px;
+      border-image-repeat: stretch;
+      border-image-slice: 100%;
+      border-image-source: none;
+      border-image-width: 1;
+      */
+      border-color: transparent;
+      border-left-style: none;
+      border-left-width: 0px;
+      /* border-right-color: rgb(255, 255, 255); */
+      border-right-style: none;
+      border-right-width: 0px;
+      /* border-top-color: rgb(255, 255, 255); */
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-top-style: none;
+      border-top-width: 0px;
+      box-shadow: none;
+      box-sizing: border-box;
+      color: @fresa;
+      cursor: pointer;
+      display: inline-block;
+      font-family: @fuente;
+      font-size: 17px;
+      font-weight: 500;
+      height: 45px;
+      letter-spacing: normal;
+      line-height: 20px;
+      margin-top: 8px;
+      outline-color: rgb(255, 255, 255);
+      outline-style: none;
+      outline-width: 0px;
+      padding-bottom: 13px;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 12px;
+      text-align: center;
+      transition-delay: 0s;
+      transition-duration: 0.25s;
+      transition-property: all;
+      transition-timing-function: ease;
+      vertical-align: middle;
+      width: 220px;
+      &:hover {
+        background-color:@fresa!important;
+        color:@carne;
+        border:1px solid @carne;
+      }
+    }
+    @media (max-width: 480px) {
+      input[type="text"],
+      .ani-placeholder {
+        width: 100%;
+        margin-bottom: 33px;
+        line-height:27px;
+        font-size:25px;
+        color:#a1a9b1; 
+        font-family: @fuente;
+        text-align: center;
+      }
+    }
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color:@carne;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:@carne;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:@carne;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:@carne;
+  }
+  #theinput {
+    color:@carne!important;
+  }
+  @media (max-width: 1000px) {
+    #theinput {
+      
+    }
+    .span4 {
+/*
+      text-align: right!important;
+      position: absolute!important;
+      left: 0!important;
+      right:inherit!important;
+      margin-top: 4px!important;
+*/
+    }
+    &.subscribe-form {
+      padding-top: 21px!important;
+      padding-bottom: 94px!important;
+    }
+  }
+  .btn.btn-marron {
+
+    background-color:@marron!important;
+    color:@carne!important;
+    &:hover {
+      background-color:@fresa!important;
+    }
+  }
+  #theinput {
+    text-align:center!important;
+  }
+}

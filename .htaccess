@@ -1,0 +1,24 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^template/ext/aa405a34/(.*) /wp-content/plugins/akismet/$1 [QSA,L]
+RewriteRule ^template/ext/e91bb166/(.*) /wp-content/plugins/hide-admin-bar/$1 [QSA,L]
+RewriteRule ^template/lib/(.*) /wp-includes/$1 [QSA,L]
+RewriteRule ^storage/(.*) /wp-content/uploads/$1 [QSA,L]
+RewriteRule ^template/ext/(.*) /wp-content/plugins/$1 [QSA,L]
+RewriteRule ^template/main\.css //index.php?style_wrapper=1 [QSA,L]
+RewriteRule ^template/(.*) /wp-content/themes/breeze/$1 [QSA,L]
+RewriteRule ^ajax /wp-admin/admin-ajax.php [QSA,L]
+RewriteRule ^submit_comment\.php /wp-comments-post.php [QSA,L]
+RewriteRule ^wp-content/themes/breeze/screenshot\.png|readme\.html|license\.txt|wp-content/debug\.log|wp-includes/$ /nothing_404_404 [QSA,L]
+RewriteRule ^(index\.php|wp-content/repair\.php|wp-comments-post\.php|wp-includes/js/tinymce/wp-tinymce\.php|xmlrpc\.php|wp-login\.php|index\.php|wp-admin/)(.*) $1$2 [QSA,L]
+RewriteRule ^(.*)\.php$ /nothing_404_404 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
