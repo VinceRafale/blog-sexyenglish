@@ -19,13 +19,14 @@
 define('DB_NAME', 'blog_sexyenglish');
 
 /* MYSQL LOCAL */
+/*
 define('DB_USER', 'root');
 define('DB_PASSWORD', 'N1tr0g3n0');
+*/
 
-/* MYSQL REMOTO 
+/* MYSQL REMOTO  */
 define('DB_USER', 'sexyenglish');
 define('DB_PASSWORD', 'Or0p3nd0l4');
-*/
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
